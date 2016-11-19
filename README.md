@@ -37,7 +37,10 @@ writeln('Vvedite m>=1');
 readln(m); 
 until m>=1; 
 writeln('Vvedite x,y,n'); 
-readln(x,y,n); 
+readln(x,y,n);
+fa:=integral(x,a,n,m); 
+fb:=integral(x,b,n,m); 
+f:=fb-fa;
 writeln(#13#10,fb:-7:3,'-',fa:-7:3,'=',f:-7:3); 
 readln; 
 end.
